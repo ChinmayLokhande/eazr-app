@@ -1,0 +1,122 @@
+@media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+    }
+  
+    .nav-left {
+      margin-bottom: 10px;
+    }
+  
+    .nav-right ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-right ul li {
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .add-to-cart-container {
+    margin: 0;
+    font-family: "Georgia", Times, serif;
+    font-weight: bold;
+  }
+  
+  nav {
+    background-color: #036ddb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-top: 10px;
+    width: 70px;
+    height: 50px;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left h2 {
+    margin-left: 10px;
+  }
+  
+  .nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-right ul li {
+    margin-left: 10px;
+  }
+  
+  .nav-right ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-right ul li a:hover {
+    color: #ccc;
+  }
+  
+  .content {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: calc(100% - 20px);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  .table-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+  }
