@@ -8,7 +8,7 @@ function History() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/history')
+    axios.get('https://eazr-backend.onrender.com/history')
       .then(response => {
         setHistory(response.data.history);
       })
@@ -37,7 +37,7 @@ function History() {
         <ul className="image-list">
           {history.map((imageUrl, index) => (
             <li key={index}>
-              <img src={`http://localhost:5000${imageUrl}`} alt={`History Image ${index + 1}`} />
+              <img src={imageUrl} alt={`History Image ${index + 1}`} />
             </li>
           ))}
         </ul>

@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const bodyParser = require('body-parser')
 const axios = require('axios');
@@ -35,8 +34,8 @@ app.get('/random-dog-image', async (req, res) => {
         imageResponse.data.pipe(imageStream);
 
         imageStream.on('finish', () => {
-            history.push(`/images/${imageName}`);
-            res.json({ imageUrl: `http://localhost:5000/images/${imageName}` });
+            history.push(`https://eazr-backend.onrender.com/images/${imageName}`);
+            res.json({ imageUrl: `https://eazr-backend.onrender.com/images/${imageName}` });
         });
     } catch (error) {
         console.error(error);
@@ -54,7 +53,6 @@ app.post('/add-to-cart', (req, res) => {
     res.json({ message: 'Image added to cart successfully' });
 });
 
-// Get cart items endpoint
 app.get('/cart', (req, res) => {
     res.json({ cart });
 });

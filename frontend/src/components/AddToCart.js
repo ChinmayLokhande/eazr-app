@@ -10,7 +10,7 @@ function AddToCart() {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/cart')
+    axios.get('https://eazr-backend.onrender.com/cart')
       .then(response => {
         setCartItems(response.data.cart);
       })
@@ -20,7 +20,7 @@ function AddToCart() {
   }, []);
 
   const addToCart = () => {
-    axios.post('http://localhost:5000/add-to-cart', { imageUrl: dog, price })
+    axios.post('https://eazr-backend.onrender.com/add-to-cart', { imageUrl: dog, price })
       .then(response => {
         setMessage(response.data.message);
         setCartItems([...cartItems, { imageUrl: dog, price }]);

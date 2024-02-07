@@ -8,7 +8,7 @@ function Home() {
   const [imageUrl, setImageUrl] = useState('');
 
   const fetchRandomDogImage = () => {
-    axios.get('http://localhost:5000/random-dog-image')
+    axios.get('https://eazr-backend.onrender.com/random-dog-image')
       .then(response => {
         setImageUrl(response.data.imageUrl);
       })

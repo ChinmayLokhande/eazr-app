@@ -1,4 +1,5 @@
 /backend/node_modules
 /frontend/node_modules
 /frontend/.gitignore
-/frontend/README.md 
+/frontend/README.md
+/backend/images
